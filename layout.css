@@ -1,0 +1,177 @@
+/*--------------------
+Main page
+--------------------*/
+
+*{
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    margin: 0;
+    background: radial-gradient( ellipse farthest-corner at center top, #002855 0%, #dbdbdb 100%);
+    color: #fff;
+    font-family: "oswald", oswald;
+}
+
+.game-container {
+    height: 100vh;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 700;
+}
+
+.Menu {
+    text-align: center;
+    margin: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.levels {
+    font: 1em san-serif;
+    font-size: 2em;
+}
+
+.main-content-container {
+    max-width: 470px;
+    margin: 0 auto;
+    margin-bottom: auto;
+    padding: 10px;
+    background: #5379a3;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    background: #5379a3;
+}
+
+.container {
+    cursor: pointer;
+    height: 120px;
+    width: 120px;
+    margin: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background: #5379a3;
+    border: 0px;
+}
+
+.frame {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.StartBtn {
+    font: 1em oswald;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 10px;
+    width: 146px;
+    height: 55px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-size: 2em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.StartBtn {
+
+    background: radial-gradient( circle, rgb(190, 160, 68) 0%, rgb(31, 64, 105) 100%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+.StartBtn span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.StartBtn:before,
+.StartBtn:after {
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 1px;
+    box-shadow: -1px -1px 20px 0px rgba(255, 255, 255, 1),
+                -4px -4px 5px 0px rgba(255, 255, 255, 1),
+                7px 7px 20px 0px rgba(0, 0, 0, 0.4),
+                4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.StartBtn:before {
+    right: 0;
+    top: 0;
+    transition: all 500ms ease;
+}
+
+.StartBtn:after {
+    left: 0;
+    bottom: 0;
+    transition: all 500ms ease;
+}
+
+.StartBtn:hover {
+    background: transparent;
+    color: #76aef1;
+    box-shadow: none;
+}
+
+.StartBtn:hover:before {
+    transition: all 500ms ease;
+    height: 100%;
+}
+
+.StartBtn:hover:after {
+    transition: all 500ms ease;
+    height: 100%;
+}
+
+.StartBtn span:before,
+.StartBtn span:after {
+    position: absolute;
+    content: "";
+    box-shadow: -1px -1px 20px 0px rgba(255, 255, 255, 1), -4px -4px 5px 0px rgba(255, 255, 255, 1), 7px 7px 20px 0px rgba(0, 0, 0, 0.4), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.StartBtn span:before {
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 0.5px;
+    transition: all 500ms ease;
+}
+
+.StartBtn span:after {
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: 0.5px;
+    transition: all 500ms ease;
+}
+
+.StartBtn span:hover:before {
+    width: 100%;
+}
+
+.StartBtn span:hover:after {
+    width: 100%;
+}
